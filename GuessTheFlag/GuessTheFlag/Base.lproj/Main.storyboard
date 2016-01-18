@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WW0-lM-fDZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uce-Wa-THC">
+                                <rect key="frame" x="200" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QIb-Kf-IbM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Uuc-CH-UME"/>
+                                    <constraint firstAttribute="width" constant="200" id="hhW-XH-cV1"/>
+                                </constraints>
+                                <state key="normal" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-2F-gZO">
+                                <rect key="frame" x="200" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="N8w-oQ-GlE"/>
+                                    <constraint firstAttribute="width" constant="200" id="bli-Pl-tp3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dws-Ei-G6r">
+                                <rect key="frame" x="200" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HDg-Wd-xg4"/>
+                                    <constraint firstAttribute="height" constant="100" id="Wtz-oq-Raf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mip-2F-gZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MbW-Kg-ICN"/>
+                            <constraint firstItem="Dws-Ei-G6r" firstAttribute="top" secondItem="Mip-2F-gZO" secondAttribute="bottom" constant="30" id="POa-PW-QGB"/>
+                            <constraint firstItem="Uce-Wa-THC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="ZJc-mt-piK"/>
+                            <constraint firstItem="Mip-2F-gZO" firstAttribute="top" secondItem="Uce-Wa-THC" secondAttribute="bottom" constant="30" id="ZiK-uO-UUo"/>
+                            <constraint firstItem="Dws-Ei-G6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aK6-y6-A14"/>
+                            <constraint firstItem="Uce-Wa-THC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szz-aM-W5C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uuB-AS-Zyj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jpa-OY-HOa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WW0-lM-fDZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ret-3m-V5p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kTs-S5-zWp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qk-f3-enK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+    </resources>
+</document>
