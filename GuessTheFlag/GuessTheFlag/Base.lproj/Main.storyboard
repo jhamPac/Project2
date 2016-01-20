@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WW0-lM-fDZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WW0-lM-fDZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,6 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="QIb-Kf-IbM"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Uuc-CH-UME"/>
+                                    <constraint firstAttribute="width" secondItem="Uce-Wa-THC" secondAttribute="height" multiplier="2:1" id="gn0-wk-cwQ"/>
                                     <constraint firstAttribute="width" constant="200" id="hhW-XH-cV1"/>
                                 </constraints>
                                 <state key="normal" image="us"/>
@@ -54,11 +56,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Mip-2F-gZO" firstAttribute="height" secondItem="Uce-Wa-THC" secondAttribute="height" id="2rb-us-HFh"/>
                             <constraint firstItem="Mip-2F-gZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MbW-Kg-ICN"/>
+                            <constraint firstItem="Dws-Ei-G6r" firstAttribute="height" secondItem="Mip-2F-gZO" secondAttribute="height" id="OYv-9J-sbS"/>
                             <constraint firstItem="Dws-Ei-G6r" firstAttribute="top" secondItem="Mip-2F-gZO" secondAttribute="bottom" constant="30" id="POa-PW-QGB"/>
                             <constraint firstItem="Uce-Wa-THC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="ZJc-mt-piK"/>
                             <constraint firstItem="Mip-2F-gZO" firstAttribute="top" secondItem="Uce-Wa-THC" secondAttribute="bottom" constant="30" id="ZiK-uO-UUo"/>
                             <constraint firstItem="Dws-Ei-G6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aK6-y6-A14"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Dws-Ei-G6r" secondAttribute="bottom" constant="20" id="fJy-dO-b98"/>
                             <constraint firstItem="Uce-Wa-THC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="szz-aM-W5C"/>
                         </constraints>
                     </view>
